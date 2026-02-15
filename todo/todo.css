@@ -1,0 +1,21 @@
+.first-view {
+    background-color: red;
+    background: url(./photos/IMG_2790.jpeg);
+    height: 80vh;
+    font-size: 56px;
+    color: var(--accent);
+    line-height: 230%;
+}
+
+.first-view h1 {
+    margin-left: 40px;
+}
+
+.second-view {
+    font-size: 32px;
+    text-align: center;
+    color: var(--accent);
+
+}
+
+.todoItem {}
