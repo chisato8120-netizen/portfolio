@@ -1,0 +1,20 @@
+.first-view {
+    background-color: red;
+    background: url(./photos/IMG_5098.jpeg);
+    background-size: 700px;
+
+    font-size: 56px;
+    color: var(--accent);
+    line-height: 250%;
+    text-align: center;
+    /* background-position:  ; */
+
+    height: 80vh;
+
+}
+
+.my-img {
+    ;
+    object-position: center;
+
+}

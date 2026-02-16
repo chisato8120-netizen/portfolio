@@ -1,14 +1,24 @@
 .first-view {
     background-color: red;
     background: url(./photos/IMG_2790.jpeg);
+    background-size: 1000px;
     height: 80vh;
     font-size: 56px;
     color: var(--accent);
-    line-height: 230%;
+    line-height: 140%;
+    text-align: right;
 }
 
 .first-view h1 {
     margin-left: 40px;
+    margin-bottom: 0;
+}
+
+.first-view h2 {
+    marfin-left: 40px;
+    font-size: 80px;
+    margin-top: 0;
+    color: rgb(97, 176, 245);
 }
 
 .second-view {
