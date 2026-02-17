@@ -14,7 +14,10 @@
 }
 
 .my-img {
-    ;
-    object-position: center;
-
+    display: block;
+    object-position: 30%;
+    width: 500px;
+    object-fit: cover;
+    margin: 0 auto;
+    height: 600px;
 }

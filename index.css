@@ -1,7 +1,8 @@
 .first-view {
     background-color: red;
     background: url(./photos/IMG_2790.jpeg);
-    background-size: 1000px;
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 80vh;
     font-size: 56px;
     color: var(--accent);

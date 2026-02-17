@@ -18,4 +18,14 @@
 
 }
 
-.todoItem {}
+.sun {
+    background-image: url(../photos/weathers/download-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.snow {
+    background-image: url(../photos/weathers/download.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
