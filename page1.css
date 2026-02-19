@@ -1,23 +1,29 @@
 .first-view {
     background-color: red;
-    background: url(./photos/IMG_5098.jpeg);
-    background-size: 700px;
-
+    background: url(./photos/dfuns\ 2021-05-05\ 184443.258.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+    overflow: hidden;
     font-size: 56px;
     color: var(--accent);
-    line-height: 250%;
+    line-height: 140%;
+    text-align: right;
+
+}
+
+.first-view h1 {
+    letter-spacing: 20px;
     text-align: center;
-    /* background-position:  ; */
-
-    height: 80vh;
-
+    margin-bottom: 0;
+    margin-top: 80px;
 }
 
 .my-img {
     display: block;
-    object-position: 30%;
-    width: 500px;
+    object-position: 0% 30%;
+    /* width: 200px; */
     object-fit: cover;
-    margin: 0 auto;
-    height: 600px;
+    /* margin: 0 auto; */
+    height: 300px;
 }

@@ -23,15 +23,34 @@ body {
 .nav {
     display: flex;
     gap: 1rem;
-    padding: 1rem;
+    padding: 7px;
+    margin: 0;
     border-bottom: 1px solid #eee;
-    background: var(--card)
+    cursor: pointer;
+    background: var(--card);
+
 }
 
 .nav a {
+    display: inline-block;
+    padding: 5px 15px;
+    margin: 0;
     color: var(--accent);
     text-decoration: none;
-    font-weight: 600
+    font-weight: 600;
+    transition: all 0.3s ease 0s;
+    border-radius: 50px;
+
+}
+
+.nav a:hover {
+    background: #00698f 0.3;
+    color: #222;
+    backdrop-filter: blur(4px);
+    transform: translateY(-2px);
+    /* 少し上に浮かせる（視覚的なクリック感） */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* 影をつけて浮遊感を出す */
 }
 
 /* フッター設定

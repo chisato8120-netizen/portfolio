@@ -4,6 +4,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     height: 80vh;
+    overflow: hidden;
     font-size: 56px;
     color: var(--accent);
     line-height: 140%;
@@ -11,14 +12,19 @@
 }
 
 .first-view h1 {
-    margin-left: 40px;
+    /* margin-left: 40px; */
+    letter-spacing: 20px;
+    text-align: center;
     margin-bottom: 0;
+    margin-top: 80px;
 }
 
 .first-view h2 {
-    marfin-left: 40px;
+    /* marfin-left: 40px; */
+    letter-spacing: 15px;
+    text-align: center;
     font-size: 80px;
-    margin-top: 0;
+    /* margin-top: 0; */
     color: rgb(97, 176, 245);
 }
 
