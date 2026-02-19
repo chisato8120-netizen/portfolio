@@ -19,18 +19,163 @@
     margin-top: 80px;
 }
 
+
 .first-view h2 {
     /* marfin-left: 40px; */
     letter-spacing: 15px;
     text-align: center;
     font-size: 80px;
-    /* margin-top: 0; */
+    margin-bottom: 0;
+    margin-top: 0;
     color: rgb(97, 176, 245);
 }
 
+.first-view h3 {
+    /* marfin-left: 40px; */
+    letter-spacing: 15px;
+    text-align: center;
+    font-size: 80px;
+    margin-top: 10px;
+    color: rgb(5, 157, 96);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.first-view h1,
+.first-view h2,
+.first-view h3 {
+    opacity: 0;
+    /* 最初は消しておく */
+    animation: fadeInUp 1.2s ease forwards;
+    /* 1.2秒かけて実行し、最後の状態を維持 */
+}
+
+/* h1：即座に、または少しだけ待って開始 */
+.first-view h1 {
+    animation-delay: 0.5s;
+}
+
+/* h2：h1が終わる頃に追いかけて開始（ディレイを長くする） */
+.first-view h2 {
+    animation-delay: 1.0s;
+}
+
+.first-view h3 {
+    animation-delay: 1.8s;
+}
+
+.second-section {
+    padding: 2% 0 2% 0;
+    background-color: #fff;
+    display: flex;
+    margin: 0 0 0 0;
+}
+
+.second-section figure {
+    margin: 0 20px 0 10%;
+    flex-shrink: 0;
+}
+
+.second-section img {
+    display: block;
+    height: 300px;
+    border-radius: 5px;
+    margin: 0;
+}
+
+.second-section figcaption {
+    font-size: 18px;
+    color: #666;
+    margin-top: 8px;
+    text-align: center;
+}
+
+.second-section h2 {
+    font-size: 35px;
+    margin: 0 0 0 20px;
+    padding: 0;
+}
+
+.second-section h3 {
+    font-size: 25px;
+    margin: 0 0 0 20px;
+    padding: 0;
+}
+
+.second-section p {
+    font-size: 15px;
+    margin: 0 0 0 20px;
+    padding: 0;
+}
+
 .second-view {
+    background-color: var(--card);
     font-size: 32px;
     text-align: center;
     color: var(--accent);
 
+}
+
+
+
+.third-view {
+    background-color: var(--card);
+    font-size: 32px;
+    text-align: center;
+    color: var(--accent);
+
+}
+
+.changing-jobs {
+    padding: 2% 0 2% 0;
+    background-color: #fff;
+    display: flex;
+    margin: 0 0 0 0;
+}
+
+.changing-jobs figure {
+    margin: 0 20px 0 10%;
+    flex-shrink: 0;
+}
+
+.changing-jobs img {
+    display: block;
+    height: 300px;
+    border-radius: 5px;
+    margin: 0;
+}
+
+.changing-jobs figcaption {
+    font-size: 18px;
+    color: #666;
+    margin-top: 8px;
+    text-align: center;
+}
+
+.changing-jobs h2 {
+    font-size: 35px;
+    margin: 0 0 0 20px;
+    padding: 0;
+}
+
+.changing-jobs h3 {
+    font-size: 25px;
+    margin: 0 0 0 20px;
+    padding: 0;
+}
+
+.changing-jobs p {
+    font-size: 15px;
+    margin: 0 0 0 20px;
+    padding: 0;
 }

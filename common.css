@@ -53,6 +53,58 @@ body {
     /* 影をつけて浮遊感を出す */
 }
 
+/* アニメーションを設定 */
+/* HTMLでclassに"u-fade-up delay-〇〇"を入れることで使用可能 */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+        /* 20px下からスッと浮き上がる */
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 2. アニメーションを「適用する」ためのベースクラス */
+.u-fade-up {
+    opacity: 0;
+    /* 最初は隠す */
+    animation-name: fadeInUp;
+    animation-duration: 0.8s;
+    /* 0.8秒かけて再生 */
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    /* 再生後に消えないように固定 */
+}
+
+/* 3. 「時間差（ディレイ）」を作るための調整用クラス */
+.delay-100 {
+    animation-delay: 0.1s;
+}
+
+.delay-300 {
+    animation-delay: 0.3s;
+}
+
+.delay-500 {
+    animation-delay: 0.5s;
+}
+
+.delay-700 {
+    animation-delay: 0.7s;
+}
+
+.delay-1000 {
+    animation-delay: 1s;
+}
+
+.delay-4000 {
+    animation-delay: 4s;
+}
+
 /* フッター設定
 .footer{
     padding:1rem;
