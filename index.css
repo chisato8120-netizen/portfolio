@@ -88,32 +88,32 @@
 
 .second-section img {
     display: block;
-    height: 300px;
+    height: 350px;
     border-radius: 5px;
     margin: 0;
 }
 
 .second-section figcaption {
-    font-size: 18px;
+    font-size: 20px;
     color: #666;
     margin-top: 8px;
     text-align: center;
 }
 
 .second-section h2 {
-    font-size: 35px;
+    font-size: 40px;
     margin: 0 0 0 20px;
     padding: 0;
 }
 
 .second-section h3 {
-    font-size: 25px;
+    font-size: 30px;
     margin: 0 0 0 20px;
     padding: 0;
 }
 
 .second-section p {
-    font-size: 15px;
+    font-size: 20px;
     margin: 0 0 0 20px;
     padding: 0;
 }
@@ -150,32 +150,94 @@
 
 .changing-jobs img {
     display: block;
-    height: 300px;
+    height: 350px;
     border-radius: 5px;
     margin: 0;
 }
 
 .changing-jobs figcaption {
-    font-size: 18px;
+    font-size: 20px;
     color: #666;
     margin-top: 8px;
     text-align: center;
 }
 
 .changing-jobs h2 {
-    font-size: 35px;
+    font-size: 40px;
     margin: 0 0 0 20px;
     padding: 0;
 }
 
 .changing-jobs h3 {
-    font-size: 25px;
+    font-size: 30px;
     margin: 0 0 0 20px;
     padding: 0;
 }
 
 .changing-jobs p {
-    font-size: 15px;
+    font-size: 20px;
     margin: 0 0 0 20px;
     padding: 0;
+}
+
+.creation {
+    padding: 2% 0 2% 0;
+    gap: 50px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.creation a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+}
+
+.creation figure {
+    flex-shrink: 0;
+    padding: 10px;
+    transition: all 0.3s ease 0s;
+    border: #00698f 1px solid;
+    border-radius: 5px;
+}
+
+.creation img {
+    display: block;
+    height: 200px;
+    border-radius: 5px;
+    margin: 0;
+}
+
+.creation figure:hover {
+    background: #00698f 0.3;
+    color: #222;
+    backdrop-filter: blur(4px);
+    transform: translateY(-2px);
+    /* 少し上に浮かせる（視覚的なクリック感） */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* 影をつけて浮遊感を出す */
+}
+
+.four-view {
+    background-color: var(--card);
+    font-size: 32px;
+    text-align: center;
+    color: var(--accent);
+
+
+}
+
+
+
+.animation {
+    transition: all 1s ease 0s;
+    transform: translateY(10px);
+    opacity: 0;
+}
+
+.animation.inited {
+    transform: translateY(0);
+    opacity: 1;
 }

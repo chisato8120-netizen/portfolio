@@ -15,6 +15,9 @@ createCalc()
 
 // })
 
+const soundcorrect = new Audio('../audio/Quiz-Ding_Dong02-1(Fast).mp3')
+const soundWrong = new Audio('../audio/Quiz-Buzzer02-4(Multi).mp3')
+
 let answer = document.getElementById("answer");
 
 answer.addEventListener("keydown", (e) => {
@@ -25,6 +28,10 @@ answer.addEventListener("keydown", (e) => {
 
         if (answerNumber === calcData.number1 + calcData.number2) {
             maru.textContent = "◯";
+
+            soundcorrect.currentTime = 0;
+            soundcorrect.play();
+
             e.target.value = ""; // 入力欄を空にする
             createCalc();        // 次の問題へ
 
@@ -33,6 +40,9 @@ answer.addEventListener("keydown", (e) => {
         } else {
             maru.textContent = "❌️";
             // 不正解のときに入力欄を消すかどうかはお好みで！
+
+            soundWrong.currentTime = 0;
+            soundWrong.play();
         }
     }
 });
