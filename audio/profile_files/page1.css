@@ -66,8 +66,7 @@
 
 .first-section {
     padding: 2% 0 2% 0;
-    background-color: #cafaff;
-    align-items: center;
+    background-color: #fff;
     display: flex;
     margin: 0 0 0 0;
 }
@@ -79,7 +78,6 @@
 
 .first-section img {
     display: block;
-    flex: 1;
     height: 300px;
     border-radius: 5px;
     margin: 0;
@@ -93,12 +91,7 @@
 }
 
 .about-me {
-    background-color: hsl(180, 100%, 100%);
-    flex: 1;
-    border-radius: 10px;
-    padding: 50px;
     margin-left: 20px;
-
 }
 
 .first-section h2 {

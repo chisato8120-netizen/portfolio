@@ -1,4 +1,5 @@
 .first-view {
+    font-family: "Bungee", sans-serif;
     background-color: red;
     background: url(./photos/IMG_2790.jpeg);
     background-size: cover;
@@ -78,7 +79,7 @@
     padding: 2% 0 2% 0;
     background-color: #fff;
     display: flex;
-    margin: 0 0 0 0;
+    margin: 3% 0 3% 0;
 }
 
 .second-section figure {
@@ -140,7 +141,7 @@
     padding: 2% 0 2% 0;
     background-color: #fff;
     display: flex;
-    margin: 0 0 0 0;
+    margin: 3% 0 3% 0;
 }
 
 .changing-jobs figure {

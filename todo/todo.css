@@ -1,21 +1,104 @@
-.first-view {
-    background-color: red;
-    background: url(./photos/IMG_2790.jpeg);
-    height: 80vh;
-    font-size: 56px;
-    color: var(--accent);
-    line-height: 230%;
+.all {
+    background-image: url(../photos/8bit.jpg);
+    background-color: rgb(147, 137, 66);
+    font-family: "DotGothic16", sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 110vh;
 }
 
-.first-view h1 {
-    margin-left: 40px;
-}
-
-.second-view {
-    font-size: 32px;
+.text {
     text-align: center;
-    color: var(--accent);
 
+}
+
+.wrapper {
+    width: fit-content;
+}
+
+.todotext {
+    display: flex;
+    height: 33px;
+    width: 700px;
+    border-radius: 5px;
+    margin: 40px 0;
+
+    border-radius: 5px;
+    background-color: var(--customacc);
+    border-color: rgba(255, 255, 255, 0);
+    box-shadow: 2px 2px rgb(147, 147, 147);
+
+}
+
+.todoul {
+    height: 300px;
+    overflow-y: scroll;
+}
+
+.todotext2 {
+    display: flex;
+    height: 100px;
+    width: 700px;
+    resize: none;
+
+    margin: 40px 0;
+    border-radius: 5px;
+    background-color: var(--customacc);
+    border-color: rgba(255, 255, 255, 0);
+    box-shadow: 2px 2px rgb(147, 147, 147);
+}
+
+.commonBtn {
+    margin: 4px;
+    /* font-family: "Bungee", sans-serif; */
+    font-family: "DotGothic16", sans-serif;
+    padding: 0 10px 0 10px;
+    background-color: var(--customacc);
+    border-color: rgba(255, 255, 255, 0);
+    box-shadow: 2px 2px rgb(147, 147, 147);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    border-radius: 5px;
+    height: 40px;
+
+}
+
+.commonBtn:hover {
+    background: #00698f 0.3;
+    color: #222;
+    border-color: #00698f80;
+    border-width: 1px;
+    backdrop-filter: blur(4px);
+    transform: translateY(-1px);
+    /* 少し上に浮かせる（視覚的なクリック感） */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* 影をつけて浮遊感を出す */
+}
+
+.allclearbtn {
+    margin: 10px;
+    cursor: pointer;
+}
+
+.lastremove {
+    margin: 10px;
+    cursor: pointer;
+}
+
+.todoItem {
+    background-color: rgb(230, 241, 255);
+    width: 500px;
+    margin: 10px auto;
+    border-radius: 6px;
+    /* border: rgb(138, 196, 144) 1px solid; */
+    list-style: none;
+    padding: 10px;
+    box-shadow: 2px 2px rgb(174, 174, 174)
+}
+
+.getweather {
+    cursor: pointer;
+    margin-top: 20px;
 }
 
 .sun {

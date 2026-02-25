@@ -1,17 +1,19 @@
 // import { calcCoin } from "../cmd/cmd";
 
+
+
 let todo = [
 ]
-getServerResponse()
+// getServerResponse()
 // 追加ボタンクリック処理
 const addBtn = document.getElementById("addBtn")
 addBtn.addEventListener("click", () => {
 
     let todoText = document.getElementById("todoText")
     let todoText2 = document.getElementById("todoText2")
-
-    if (todoText.value.trim() == "" && todoText2.value.trim == "") {
-        window.alert("タイトルが入力されていません")
+    // if (todoText.value.trim() == "" && todoText2.value.trim() == "") {
+    if (todoText.value.trim() == "") {
+        // window.alert("タイトルが入力されていません")
         return
     }
     const now = new Date()
@@ -59,24 +61,92 @@ const getWeather = document.getElementById("getWeather")
 // getWeather.addEventListener("click", getServerResponse)
 
 
+
 async function getServerResponse() {
+
+    const getPosition = () => {
+        return new Promise((resolve, reject) => {
+            navigator.geolocation.getCurrentPosition(resolve, reject);
+        });
+    };
+
+    const position = await getPosition();
+    const lat = position.coords.latitude;
+    const lon = position.coords.longitude;
     let weatherIcon = document.getElementById("weatherIcon")
-    let url = "https://api.open-meteo.com/v1/forecast?latitude=60.419&longitude=170.9919&daily=weather_code&start_date=2026-02-16&end_date=2026-02-16"
+    let url = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&daily=weather_code,temperature_2m_max,temperature_2m_min&hourly=temperature_2m`
     const response = await fetch(url)
     const data = await response.json()
     const weatherCode = data.daily.weather_code[0]
     console.log(weatherCode)
     switch (weatherCode) {
-        case 3:
-            weatherIcon.classList.add("sun")
+        case 0:
+            weatherIcon.classList.add("clearSky")
+            // console.log("晴れ")
+
+            break;
+        case 1, 2, 3:
+
+            weatherIcon.classList.add("partlyCloudy")
             // console.log("晴れ、曇り、一部曇り")
 
             break;
 
-        case 71:
-            weatherIcon.classList.add("snow")
-            // console.log("降雪量: 微雪、中雪、大雪")
+        case 45, 48:
+            weatherIcon.classList.add("fog")
+
             break;
+        case 51, 53, 55:
+            weatherIcon.classList.add("drizzle")
+
+            break;
+
+        case 56, 57:
+            weatherIcon.classList.add("freezing-drizzle")
+
+            break;
+
+        case 61, 63, 65:
+            weatherIcon.classList.add("light-rain")
+
+            break;
+
+        case 66, 67:
+            weatherIcon.classList.add("freezing-rain")
+
+            break;
+
+        case 71, 73, 75:
+            weatherIcon.classList.add("light-snow")
+
+            break;
+
+        case 77:
+            weatherIcon.classList.add("snow-grains")
+
+            break;
+
+        case 80, 81, 82:
+            weatherIcon.classList.add("sudden-rain")
+
+            break;
+
+        case 85, 86:
+            weatherIcon.classList.add("snow")
+
+            break;
+
+        case 95:
+            weatherIcon.classList.add("thunderstorm")
+
+            break;
+
+        case 96, 99:
+            weatherIcon.classList.add("hail")
+
+            break;
+
+
 
         default:
             break;
@@ -110,10 +180,10 @@ function render() {
         p1.textContent = "タイトル：" + todo[i].title
 
         // p2に表示テキストを追加
-        p2.textContent = "詳細；" + todo[i].description
+        p2.textContent = "詳細：" + todo[i].description
 
         // p3に表示テキストを追加
-        p3.textContent = "追加した日時 ;" + todo[i].date
+        p3.textContent = "追加した日時：" + todo[i].date
         // liにp1,p2を追加
         li.append(p1, p2, p3);
 

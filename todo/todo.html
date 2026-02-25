@@ -5,32 +5,50 @@
   <meta charset="utf-8">
   <title>todolist</title>
   <script src="todo.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=DotGothic16&family=Noto+Sans+JP&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="todo.css">
   <link rel="stylesheet" href="../common.css">
 </head>
 
 <body>
+
   <div class="nav">
     <a href="../index.html">home</a>
     <a href="../page1.html">profile</a>
     <!-- <a href="#">todo</a>
     <a href="../calc/calc.html">calc</a> -->
+  </div>
+  <div class="all">
+    <section style="margin: 0 auto;width: fit-content;">
+      <h1 style="margin-left:40px">TODOリスト</h1>
+      <div class="text">
+        <div class="wrapper">
+          <input type="text" class="todotext" placeholder="todoのタイトルを入力" id="todoText">
+          <!-- <input type="text" class="todotext2" placeholder="todoの詳細を入力" id="todoText2"> -->
+          <textarea type="text" class="todotext2" placeholder="todoの詳細を入力" id="todoText2"></textarea>
+        </div>
+      </div>
+      <ul id="todos" class="todoul"
+        style="padding:0;min-height: 40px;border: 3px rgb(169, 169, 169) dashed;border-radius: 5px;">
+      </ul>
+      <div>
+        <button class="commonBtn" id="addBtn">追加</button>
+        <button class="allclearbtn commonBtn" id="allClearBtn">すべて削除</button>
+        <button class="lastremove commonBtn" id="lastRemove">最後に追加したTODOを削除</button>
+      </div>
 
+
+      <button class="getweather commonBtn" id="getWeather">唐津の天気</button>
+      <div id="weatherIcon" style="height: 200px;width:200px;">
+
+      </div>
+    </section>
   </div>
 </body>
-<input type="text" placeholder="todoタイトルを入力" id="todoText">
-<input type="text" placeholder="todo詳細を入力" id="todoText2">
-<button id="addBtn">追加</button>
-<ul id="todos">
-</ul>
-<button id="allClearBtn">すべて削除</button>
-<button id="lastRemove">最後に追加したTODOを削除</button>
 
-
-<button id="getWeather">唐津の天気</button>
-<div id="weatherIcon" style="height: 200px;width:200px;background-color: red;">
-
-</div>
 
 
 </html>
