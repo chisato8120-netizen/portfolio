@@ -9,6 +9,10 @@
 
 .text {
     text-align: center;
+    margin: 0;
+    padding: 10px;
+    background-color: rgba(46, 47, 60, 0.278);
+    border-radius: 5px;
 
 }
 
@@ -21,10 +25,10 @@
     height: 33px;
     width: 700px;
     border-radius: 5px;
-    margin: 40px 0;
+    margin: 0;
 
     border-radius: 5px;
-    background-color: var(--customacc);
+    background-color: rgb(230, 241, 255);
     border-color: rgba(255, 255, 255, 0);
     box-shadow: 2px 2px rgb(147, 147, 147);
 
@@ -43,7 +47,7 @@
 
     margin: 40px 0;
     border-radius: 5px;
-    background-color: var(--customacc);
+    background-color: rgb(230, 241, 255);
     border-color: rgba(255, 255, 255, 0);
     box-shadow: 2px 2px rgb(147, 147, 147);
 }
@@ -53,7 +57,7 @@
     /* font-family: "Bungee", sans-serif; */
     font-family: "DotGothic16", sans-serif;
     padding: 0 10px 0 10px;
-    background-color: var(--customacc);
+    background-color: rgba(255, 255, 255, 0.463);
     border-color: rgba(255, 255, 255, 0);
     box-shadow: 2px 2px rgb(147, 147, 147);
     transition: all 0.3s ease 0s;
