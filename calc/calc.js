@@ -1,3 +1,5 @@
+let isGameStart = false
+let count = 0
 let calcData = {}
 createCalc()
 // let answer = document.getElementById("answer")
@@ -14,6 +16,8 @@ createCalc()
 //     }
 
 // })
+
+
 
 const soundcorrect = new Audio('../audio/Quiz-Ding_Dong02-1(Fast).mp3')
 const soundWrong = new Audio('../audio/Quiz-Buzzer02-4(Multi).mp3')
@@ -56,3 +60,20 @@ function createCalc() {
     number1.textContent = calcData.number1
     number2.textContent = calcData.number2
 }
+let gameStartBtn = document.getElementById("gameStartBtn")
+gameStartBtn.addEventListener("click", () => {
+    isGameStart = true
+})
+
+const timer = setInterval(() => {
+    const timeCounter = document.getElementById("timeCounter")
+    timeCounter.textContent = count
+    count++
+    console.log(count)
+
+    if (count > 10) {
+        clearInterval(timer)
+    }
+}, 1000)
+
+

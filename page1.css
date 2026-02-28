@@ -66,11 +66,19 @@
 
 .first-section {
     padding: 2% 0 2% 0;
-    background-color: #cafaff;
-    align-items: center;
-    display: flex;
     margin: 0 0 0 0;
 }
+
+.first-section-wrapper {
+    align-items: center;
+    display: flex;
+    width: fit-content;
+    margin: 0 auto;
+    background-color: rgb(221, 237, 255);
+    border-radius: 5px;
+
+}
+
 
 .first-section figure {
     margin: 0 20px 0 10%;
@@ -93,7 +101,7 @@
 }
 
 .about-me {
-    background-color: hsl(180, 100%, 100%);
+    /* background-color: hsl(180, 100%, 100%); */
     flex: 1;
     border-radius: 10px;
     padding: 50px;

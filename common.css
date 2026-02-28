@@ -4,7 +4,7 @@
     --grey: #666;
     --bg: #fff;
     --card: #f8f8f8;
-    --customacc: rgba(189, 222, 251, 0.589);
+    --customacc: rgba(189, 222, 251, 0.589)
 }
 
 * {
@@ -108,6 +108,35 @@ body {
 
 .delay-4000 {
     animation-delay: 4s;
+}
+
+
+
+.commonBtn {
+    margin: 4px;
+    /* font-family: "Bungee", sans-serif; */
+    font-family: "DotGothic16", sans-serif;
+    padding: 0 10px 0 10px;
+    background-color: rgba(255, 255, 255, 0.463);
+    border-color: rgba(255, 255, 255, 0);
+    box-shadow: 2px 2px rgb(147, 147, 147);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    border-radius: 5px;
+    height: 40px;
+
+}
+
+.commonBtn:hover {
+    background: #00698f 0.3;
+    color: #222;
+    border-color: #00698f80;
+    border-width: 1px;
+    backdrop-filter: blur(4px);
+    transform: translateY(-1px);
+    /* 少し上に浮かせる（視覚的なクリック感） */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* 影をつけて浮遊感を出す */
 }
 
 /* フッター設定
