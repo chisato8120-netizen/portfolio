@@ -15,13 +15,43 @@
 .timeCounter {
     width: 300px;
     height: 100px;
-    background-color: red;
     position: absolute;
-    top: 100px;
+    top: 250px;
     left: 50%;
     transform: translateX(-50%);
     border-radius: 5px;
     font-size: 56px;
     text-align: center;
+
+}
+
+.collectCount {
+    height: 70px;
+    width:
+        300px;
+    font-size: 30px;
+    margin: 20px auto 0 auto;
+    text-align: center;
+}
+
+.timeSet {
+    width: 100px;
+    height: 40px;
+}
+
+
+.timeSet :focus {
+    border: 3px solid rgb(113, 113, 255);
+}
+
+.timeSetWrapper {
+    margin: 50px auto 0 auto;
+    display: flex;
+    justify-content: center;
+
+}
+
+.timeSetWrapper label {
+    font-size: 20px;
 
 }

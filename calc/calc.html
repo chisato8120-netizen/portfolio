@@ -18,6 +18,17 @@
     <!-- <a href="../todo/todo.html">todo</a>
     <a href="#">calc</a> -->
   </div>
+  <div class="timeSetWrapper">
+    <label>回答時間：</label>
+    <select class="timeSet" id="timeSet">
+      <option value="10">10秒</option>
+      <option value="20">20秒</option>
+      <option value="30">30秒</option>
+      <option value="40">40秒</option>
+      <option value="50">50秒</option>
+      <option value="60">60秒</option>
+    </select>
+  </div>
   <div style="margin-top: 300px;font-size: 56px;text-align: center;" id="maru"></div>
   <div style="text-align: center;">
     <span id="number1" style="font-size: 56px;">2</span>
@@ -26,7 +37,9 @@
     <span style="font-size: 56px;">=</span>
     <input id="answer" type="number" style="height: 70px;width: 300px;font-size: 56px;">
   </div>
-  <button class="commonBtn gameStartBtn" id="gameStartBtn">開始</button>]
+  <button class="commonBtn gameStartBtn" id="gameStartBtn">開始</button>
+  <div id="collectCount" class="collectCount" type="number"></div>
+
   <div class="timeCounter" id="timeCounter"></div>
 
 </html>
