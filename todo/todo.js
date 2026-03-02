@@ -82,7 +82,7 @@ async function getServerResponse() {
     switch (weatherCode) {
         case 0:
             weatherIcon.classList.add("clearSky")
-            // console.log("晴れ")
+            console.log("晴れ")
 
             break;
         case 1, 2, 3:
@@ -152,6 +152,7 @@ async function getServerResponse() {
             break;
     }
 }
+
 
 
 

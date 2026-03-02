@@ -22,6 +22,7 @@
 
 .todotext {
     display: flex;
+    font-family: "DotGothic16", sans-serif;
     height: 33px;
     width: 700px;
     border-radius: 5px;
@@ -41,6 +42,7 @@
 
 .todotext2 {
     display: flex;
+    font-family: "DotGothic16", sans-serif;
     height: 100px;
     width: 700px;
     resize: none;
@@ -78,7 +80,61 @@
     margin-top: 20px;
 }
 
-.sun {
+.clearSky {
+    background-image: url(../photos/weathers/download-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.partlyCloudy {
+    background-image: url(../photos/weathers/download-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fog {
+    background-image: url(../photos/weathers/download-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.drizzle {
+    background-image: url(../photos/weathers/download-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.freezing-drizzle {
+    background-image: url(../photos/weathers/download-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.light-rain {
+    background-image: url(../photos/weathers/download-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.freezing-rain {
+    background-image: url(../photos/weathers/download-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.light-snow {
+    background-image: url(../photos/weathers/download-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.snow-grains {
+    background-image: url(../photos/weathers/download-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sudden-rain {
     background-image: url(../photos/weathers/download-1.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -86,6 +142,18 @@
 
 .snow {
     background-image: url(../photos/weathers/download.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.thunderstorm {
+    background-image: url(../photos/weathers/download-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hail {
+    background-image: url(../photos/weathers/download-1.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
