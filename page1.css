@@ -97,7 +97,7 @@
 
 .first-section figure {
     margin: 0 20px 0 10%;
-    flex-shrink: 0;
+    flex: 1;
 }
 
 .first-section img {
@@ -109,11 +109,13 @@
 }
 
 .first-section figcaption {
-    font-size: 18px;
+    font-size: 20px;
     color: #666;
     margin-top: 8px;
-    text-align: center;
+
+    margin-left: 90px;
 }
+
 
 .about-me {
     /* background-color: hsl(180, 100%, 100%); */
@@ -146,7 +148,7 @@
 
 .second-section figure {
     margin: 0 20px 0 10%;
-    flex-shrink: 0;
+    flex: 1;
 }
 
 .second-section img {
@@ -158,7 +160,7 @@
 }
 
 .second-section figcaption {
-    font-size: 18px;
+    font-size: 20px;
     color: #666;
     margin-top: 8px;
     text-align: center;
@@ -194,9 +196,9 @@
     padding: 0;
 }
 
-.second-section h3 {
-    font-size: 30px;
-    margin: 0 0 0 40px;
+.second-section h2 {
+    font-size: 40px;
+    margin: 0 0 0 20px;
     padding: 0;
 }
 
@@ -215,4 +217,55 @@
 .animation.inited {
     transform: translateY(0);
     opacity: 1;
+}
+
+.photos {
+    margin-top: 3%;
+    margin-bottom: 50px;
+}
+
+.photos div {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1300px;
+    margin: 0 auto;
+    gap: 10px;
+    justify-content: center;
+}
+
+
+.photos .img-items img:hover {
+    filter: brightness(30%);
+}
+
+.selected {
+    filter: brightness(30%);
+
+}
+
+.photos .img-items img {
+    transition: 0.1s;
+    cursor: pointer;
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.photos .selectImg {
+    margin-bottom: 10px;
+}
+
+.photos .selectImg img {
+    width: 80vw;
+    height: 600px;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+.photos .selectImg p {
+    width: 600px;
+    font-size: 20px;
+    color: #868686;
+    text-align: center;
 }

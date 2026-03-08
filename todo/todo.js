@@ -13,7 +13,7 @@ addBtn.addEventListener("click", () => {
     let todoText2 = document.getElementById("todoText2")
     // if (todoText.value.trim() == "" && todoText2.value.trim() == "") {
     if (todoText.value.trim() == "") {
-        // window.alert("タイトルが入力されていません")
+        window.alert("タイトルが入力されていません")
         return
     }
     const now = new Date()
@@ -41,7 +41,15 @@ allClearBtn.addEventListener("click", () => {
 // 最後ボタンクリック処理
 const lastRemove = document.getElementById("lastRemove")
 lastRemove.addEventListener("click", () => {
-    todo.pop()
+    const checkedItem = document.querySelectorAll("input[type='checkbox']:checked")
+
+    for (let i = checkedItem.length - 1; i >= 0; i--) {
+        let id = checkedItem[i].dataset.id
+        todo.splice(id, 1)
+    }
+
+
+    // todo.pop()
     render()
 
 })
@@ -171,7 +179,9 @@ function render() {
         let p1 = document.createElement("p")
         let p2 = document.createElement("p")
         let p3 = document.createElement("p")
-
+        let checkBox = document.createElement("input")
+        checkBox.type = "checkBox"
+        checkBox.dataset.id = i
 
 
 
@@ -186,7 +196,7 @@ function render() {
         // p3に表示テキストを追加
         p3.textContent = "追加した日時：" + todo[i].date
         // liにp1,p2を追加
-        li.append(p1, p2, p3);
+        li.append(p1, p2, p3, checkBox);
 
         // liにテキストを設定
         // ulにliを追加

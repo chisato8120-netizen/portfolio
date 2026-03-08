@@ -72,7 +72,16 @@
     /* border: rgb(138, 196, 144) 1px solid; */
     list-style: none;
     padding: 10px;
-    box-shadow: 2px 2px rgb(174, 174, 174)
+    box-shadow: 2px 2px rgb(174, 174, 174);
+    position: relative;
+    padding-right: 50px;
+}
+
+.todoItem input {
+    position: absolute;
+    top: 50%;
+    right: 40px;
+    transform: translateY(-50%);
 }
 
 .getweather {
